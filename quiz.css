@@ -1,0 +1,36 @@
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav button {
+    background: white;
+    border:none;
+
+}
+
+main {
+    margin: 20vh 20%;
+    text-align: center;
+}
+
+button {
+    background: purple;
+    margin: 20px;
+    width: 15%;
+    height: 70px;
+    font-size: 30px;
+    color: white;
+    padding: auto;
+    
+    border-radius: 8px;
+  
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+
