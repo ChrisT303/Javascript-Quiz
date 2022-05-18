@@ -9,16 +9,37 @@
 </head>
 <body>
     <nav>
-        <button id="highScore">Show Highscore</button>
-        <h2>Time: <span id="time">60</span></h2>
+        <button id="high-scores" onclick="showScores()">HIGH SCORES</button>
+        <h2>Time: <span id="time">90</span></h2>
     </nav>
     <main>
-        <h1>The Coding Quiz</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias animi ea corrupti maxime laborum, eligendi, ipsum veritatis molestiae dolorum quam asperiores, repellendus velit quis nesciunt.</p>
-        <p>Sunt velit deleniti ullam excepturi laborum maiores quisquam vero corrupti obcaecati cumque animi officiis praesentium sequi laudantium, inventore quis, distinctio nihil impedit atque, eaque aspernatur.</p>
-        <button id="start">Start Quiz</button>
+        <h1>Javascript Quiz</h1>
+        <p>Let's take a Javascript quiz to test you knowledge!</p>
+        <p>The following quiz consistst of 5 multiple choice quesitons. You will are given 90 seconds to answer all questions. 
+            Answer correclty and you will be awarded points and will move to the next question.
+            Answer inocorreclty and you will lose 10 seconds off the time you have left to complete the quiz. GOOD LUCK!
+        </p>
+        <button id="start">Start Quiz</button>    
     </main>
-        
+
+<div  class="initials">
+    <input id='initial' placeholder='add initials'>
+    <button onclick='handleInitials()'>Submit</button>
+</div>
+
+<div id="scoresPage">
+    <button id="reload" onclick="reloadGame()">Play Again</button>
+    <button onclick="resetGame()">Reset High Scores</button>
+</div>
+
+       <section>
+        <div class="answer-text">
+              <hr id="line-break" class="break">
+              <p id="answerNotice" class="notice"></p>
+        </div>
+    </section>       
+  
+
     <script src="questions.js"></script>
     <script src="quiz.js"></script>    
 </body>

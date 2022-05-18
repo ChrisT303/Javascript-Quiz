@@ -11,7 +11,7 @@ let questions = [
     },
     {
        question: 'Which of the following starts a loop?',
-       answers: ['for','if','do it!','cosnole.log'],
+       answers: ['for','if','do it!','console.log'],
        correct: 'for' 
     },
     {

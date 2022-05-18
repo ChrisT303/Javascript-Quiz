@@ -11,25 +11,72 @@ nav button {
 }
 
 main {
-    margin: 20vh 20%;
+    margin: 10vh 20%;
     text-align: center;
 }
 
 button {
+    display: block;
+    justify-content: center;
     background: purple;
     margin: 20px;
-    width: 15%;
+    margin-left: 40%;
+    width: 20%;
     height: 70px;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-    padding: auto;
-    
+    padding: auto;  
     border-radius: 8px;
   
 }
 
 h1 {
     font-size: 50px;
+}
+
+button:hover {
+    background-color: rgb(236, 93, 236);
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+}
+
+ .answer-text {
+   margin-left: 20%;
+   margin-right: 20%;
+   padding: 0;
+   font-weight: bold;
+   overflow: hidden;
+} 
+
+.break .notice {
+    display: none;
+  
+}
+
+#high-scores {
+    border: 5px solid black;
+    color:black;
+}
+
+.initials {
+    display: none;
+    margin: 1vh;
+   
+} 
+
+input {
+    margin-left: 46%;
+    border: 5px solid black;
+}
+
+#scoresPage {
+    
+    margin: 1vh;
+    margin-left: 20%;
+    margin-right: 20%; 
 }
 
 
