@@ -21,3 +21,4 @@ If the user elects to try the quiz again, the quiz resets.
 
 If the user elects to clear the scores they are cleared in local storage.
 
+![image](https://user-images.githubusercontent.com/103149149/169417043-16eef5d7-e6f3-4ab4-81b2-010b54dc468a.png)
