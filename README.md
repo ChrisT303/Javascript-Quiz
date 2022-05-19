@@ -1,4 +1,3 @@
-# challenge04
 This is a quiz I created to test the user's knowledge of Javascript
 
 The quiz conists of 5 mulitple choice questions that will prompt the user if selected answer
