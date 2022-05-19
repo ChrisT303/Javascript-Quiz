@@ -20,3 +20,5 @@ On the final page the Top 5 scores are displayed
 If the user elects to try the quiz again, the quiz resets.
 
 If the user elects to clear the scores they are cleared in local storage.
+
+![image](https://user-images.githubusercontent.com/103149149/169416826-e6ce5278-21a2-4fc8-afb2-6e125dd3c8b9.png)
