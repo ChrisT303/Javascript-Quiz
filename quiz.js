@@ -36,21 +36,24 @@ function handleQuestion() {
         
         handleAnswer(answer, correct);
       });
+    
     });
+    
   } else {
     
     endGame();
   }
+  
 }
 
 function handleAnswer(answer, correct) {
   if (answer === correct) {
 
-    var lineBreak = document.getElementById("line-break");
+    var lineBreak = document.getElementById("lineBreak");
     lineBreak.style.display = "block";
     answerNotice.style.display = "block";
     score += 20;
-    answerNotice.alert = "Correct!";
+    answerNotice.textContent = "Correct!";
   } else {
     time -= 10; 
     clock.innerHTML = time;
@@ -75,10 +78,13 @@ function endGame() {
   <p>Enter your initilas to see if you made the top 5!<p>
  `;
  document.querySelector('.initials').style.display = 'block';
+ document.querySelector(".answerText").style.display = "none";
   };
 
+  document.querySelector('#submit').addEventListener('click', handleInitials);
+
   function handleInitials() {
-    console.log('clicked!!!');
+
     let initals = document.getElementById('initial').value;
 
     let store = localStorage.scores != undefined
@@ -86,14 +92,17 @@ function endGame() {
     
     store.push({'initial':initals,'score':score});
 
-    localStorage.scores = JSON.stringify(store);
-
+    localStorage.scores = JSON.stringify(store);    
+   
   };
 
 
 
+  document.querySelector('#submit').addEventListener('click', showScores);
+  document.querySelector('.highScores').addEventListener("click", showScores)
+
   function showScores() {
-     if(localStorage.scores==undefined) return;
+     if(localStorage.scores == undefined) return;
     
     let store = eval(localStorage.scores);
 
@@ -103,13 +112,27 @@ function endGame() {
     store.forEach((pl,i) => {
       if(i>4) return;
       prompt.innerHTML += `<h2>${pl.initial}: ${pl.score}` 
+       
     });
+    
+    document.querySelector('.initials').style.display = 'none';
+    document.querySelector("#scoresPage").style.display= "block";
+     
   }
   
   function reloadGame() {
     window.location.reload();
   }
 
+  // let reset = document.getElementsByTagName('h2');
+
+  // reset.addEventListener('click', function handleClick(event){
+  //        reset.remove();
+  // })
+
   function resetGame() {
-    window.localStorage.clear();
+    window.localStorage.clear()
+    prompt.innerHTML += `<h2>Scores Cleared<h2>`;
   }
+
+  

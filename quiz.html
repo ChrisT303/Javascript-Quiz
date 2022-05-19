@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <button id="high-scores" onclick="showScores()">HIGH SCORES</button>
+        <button class ="highScores">HIGH SCORES</button>
         <h2>Time: <span id="time">90</span></h2>
     </nav>
     <main>
@@ -24,17 +24,17 @@
 
 <div  class="initials">
     <input id='initial' placeholder='add initials'>
-    <button onclick='handleInitials()'>Submit</button>
+    <button id="submit" >Submit</button>
 </div>
 
 <div id="scoresPage">
-    <button id="reload" onclick="reloadGame()">Play Again</button>
-    <button onclick="resetGame()">Reset High Scores</button>
+    <button onclick="reloadGame()">Play Again</button>
+    <button id="reset" onclick="resetGame()">Reset High Scores</button>
 </div>
 
        <section>
-        <div class="answer-text">
-              <hr id="line-break" class="break">
+        <div class="answerText">
+              <hr id="lineBreak" class="break">
               <p id="answerNotice" class="notice"></p>
         </div>
     </section>       

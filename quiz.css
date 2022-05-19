@@ -43,7 +43,7 @@ p {
     font-size: 20px;
 }
 
- .answer-text {
+ .answerText {
    margin-left: 20%;
    margin-right: 20%;
    padding: 0;
@@ -56,7 +56,7 @@ p {
   
 }
 
-#high-scores {
+.highScores {
     border: 5px solid black;
     color:black;
 }
@@ -68,12 +68,12 @@ p {
 } 
 
 input {
-    margin-left: 46%;
+    margin-left: 45%;
     border: 5px solid black;
 }
 
 #scoresPage {
-    
+    display: none;
     margin: 1vh;
     margin-left: 20%;
     margin-right: 20%; 
