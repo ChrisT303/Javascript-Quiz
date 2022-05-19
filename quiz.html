@@ -8,10 +8,12 @@
      <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
-    <nav>
+    <!-- Hight score button and timer display -->
+    <nav class="hide">
         <button class ="highScores">HIGH SCORES</button>
         <h2>Time: <span id="time">90</span></h2>
     </nav>
+    <!-- Start page with text -->
     <main>
         <h1>Javascript Quiz</h1>
         <p>Let's take a Javascript quiz to test you knowledge!</p>
@@ -19,19 +21,20 @@
             Answer correclty and you will be awarded points and will move to the next question.
             Answer inocorreclty and you will lose 10 seconds off the time you have left to complete the quiz. GOOD LUCK!
         </p>
+        <!-- Button to start game -->
         <button id="start">Start Quiz</button>    
     </main>
-
+         <!-- Initials input and submit buttons for high score -->
 <div  class="initials">
     <input id='initial' placeholder='add initials'>
     <button id="submit" >Submit</button>
 </div>
-
+     <!-- Event listeners addes to buttons on final page to start over and reset scores -->
 <div id="scoresPage">
     <button onclick="reloadGame()">Play Again</button>
-    <button id="reset" onclick="resetGame()">Reset High Scores</button>
+    <button onclick="resetScore()">Reset High Scores</button>
 </div>
-
+     <!-- Section for answer prompts -->
        <section>
         <div class="answerText">
               <hr id="lineBreak" class="break">
